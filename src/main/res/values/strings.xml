@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">bizibox SMS</string>
+    <string name="prompt_email">מייל מקושר לחשבון ביזיבוקס</string>
+    <string name="prompt_password">סיסמה למערכת bizibox</string>
+    <string name="tel">מספר הסלולרי המקושר לחשבון</string>
+    <string name="tel2">עדכון מספר סלולרי</string>
+    <string name="dateLastUpdateText">תאריך עדכון אחרון</string>
+    <string name="dateLastUpdateTextFirst">לא נמצא עדכון אחרון</string>
+    <string name="textUnderLogo">יישומון להעברת הודעות מערכת למנויי ביזיבוקס לרואי חשבון ויועצי מס</string>
+    <string name="Username">Email</string>
+    <string name="Password">Password</string>
+    <string name="action_sign_in">כניסה למערכת</string>
+    <string name="button_finish">סגור אפליקציה</string>
+    <string name="action_sign_in_short">כניסה למערכת</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">הזן סיסמה</string>
+    <string name="error_invalid_user">הזן שם משתמש</string>
+    <string name="error_invalid_tel">הזן מספר סלולרי</string>
+    <string name="error_invalid_tel_short">מספר לא תקין</string>
+    <string name="error_incorrect_password">אחד מהפרטים שהוזן שגוי.\nאנא וודאו כי הכנסתם את פרטי הכניסה למערכת ביזיבוקס</string>
+    <string name="error_field_required">שדה חובה</string>
+    <string name="action_leave">התנתקות</string>
+    <string name="reminder">הינך מחובר בהצלחה</string>
+    <string name="reminder1">מערכת bizibox תבצע טעינה יזומה של חשבון פועלים בעסקים בכל בוקר בין השעות 9:00&#8211;11:00.</string>
+    <string name="reminder2">כאשר האפליקציה תזהה הודעה נכנסת מאתר הבנק, היא תעביר אותה באופן אוטומטי למערכת.</string>
+    <string name="reminder3">אין צורך לבצע פעולות,\nמערכת bizibox עובדת בשבילך.</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+
+
+    <string name="quickstart_message">לחץ כאן לפתיחת האפליקציה</string>
+    <string name="subscribe_to_news">Subscribe To News</string>
+    <string name="log_token">Log Token</string>
+
+    <string name="msg_subscribed">Subscribed to news topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">Otp</string>
+</resources>

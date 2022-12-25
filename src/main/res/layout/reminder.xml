@@ -1,0 +1,295 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:background="#1287aa"
+        android:minHeight="@android:dimen/app_icon_size"
+        android:theme="?attr/actionBarTheme" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="LOGO" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="2"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:cropToPadding="false"
+        android:elevation="0dp"
+        android:gravity="left"
+        android:onClick="closeApp"
+        android:scaleType="fitXY"
+        app:srcCompat="@android:drawable/ic_lock_power_off"
+        app:tint="@color/colorWhite"
+        android:contentDescription="LOGOFF" />
+
+    <ScrollView
+        android:id="@+id/wrapInside"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/wrapInsideLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/layAlert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wrapInsideLinearLayout"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonPer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="4"
+                    android:background="#1287aa"
+                    android:enabled="true"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:onClick="getPer"
+                    android:text="אפשר הרשאות"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/titles"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="7"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:text="@string/reminder"
+                    android:textColor="#1287aa"
+                    android:textDirection="rtl"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line11"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/layAlert"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:background="#1287aa"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:id="@+id/reminder1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:text="@string/reminder1"
+                android:textAlignment="textEnd"
+                android:textColor="#1287aa"
+                android:textDirection="rtl"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/reminder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/reminder2"
+                android:textAlignment="textEnd"
+                android:textColor="#1287aa"
+                android:textDirection="rtl"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/reminder3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:text="@string/reminder3"
+                android:textAlignment="textEnd"
+                android:textColor="#1287aa"
+                android:textDirection="rtl"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/titles"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:background="#1287aa"
+                android:paddingTop="5dp" />
+
+
+            <TextView
+                android:id="@+id/dateLastUpdateText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:gravity="right"
+                android:text="@string/dateLastUpdateText"
+                android:textAlignment="textEnd"
+                android:textColor="#1287aa"
+                android:textDirection="rtl"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dateLastUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateLastUpdateText"
+                android:layout_marginTop="35dp"
+                android:gravity="right"
+                android:text="@string/dateLastUpdateTextFirst"
+                android:textAlignment="textEnd"
+                android:textColor="#1287aa"
+                android:textDirection="rtl"
+                android:textSize="23sp" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/dateLastUpdate"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:background="#1287aa"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:id="@+id/phoneViewText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line"
+                android:layout_weight="1"
+                android:text="@string/tel2"
+                android:textAlignment="textEnd"
+                android:textColor="#1287aa"
+                android:textDirection="rtl"
+                android:textSize="23sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneViewText2"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <otpnew.bizibox.com.biziboxotp.PrefixEditText
+                    android:id="@+id/tel2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="7"
+                    android:digits="0123456789"
+                    android:enabled="false"
+                    android:gravity="left"
+                    android:hint=""
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:tag="+972 "
+                    android:textDirection="ltr"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/buttonSave"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="3"
+                    android:background="#1287aa"
+                    android:enabled="false"
+                    android:onClick="saveEdit"
+                    android:text="שמור"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/buttonEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="3"
+                    android:background="#1287aa"
+                    android:enabled="true"
+                    android:onClick="editPhone"
+                    android:text="ערוך"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
